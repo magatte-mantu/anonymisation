@@ -12,7 +12,7 @@ def anonymize_sql_procedure(input_file, output_file="output.sql", mapping_file="
 
     table_idx = column_idx = alias_idx = proc_idx = var_idx = 1
 
-    # 1. Anonymiser la procédure stockée
+    # 1. Anonymiser la procédure stockée.
     def replace_procedure(match):
         nonlocal proc_idx
         schema = match.group(1)
